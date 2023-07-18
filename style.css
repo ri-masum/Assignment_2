@@ -25,9 +25,10 @@ body {
     line-height: normal;
 
 }
+
 nav {
     width: 100vw;
-    
+
     padding: 20px;
 }
 
@@ -75,6 +76,7 @@ nav {
 
 
 /* banner */
+
 .banner-container {
     margin: 0 auto;
     display: flex;
@@ -88,12 +90,14 @@ nav {
     flex-direction: column;
     justify-content: center;
     background-image: url('./images/Group\ 14.png');
-    background-size: 100% auto;
+    background-size: 100%;
 }
-.banner-text-box{
+
+.banner-text-box {
     width: 70%;
     margin-left: 240px;
     line-height: 35px;
+    overflow: unset;
 }
 
 
@@ -134,7 +138,64 @@ nav {
 
 }
 
+.primary-font {
+    font-size: 15px;
+    color: #534C64;
+    font-weight: 500;
+}
+
 /* banner */
+
+/* main */
+
+.card-container {
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+main h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 100px;
+    line-height: 10px;
+}
+
+main>p {
+    text-align: center;
+}
+
+.font {
+    font-size: 48px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card {
+    width: 345px;
+    height: 470px;
+    text-align: center;
+    margin-top: 30px;
+}
+.card>img{
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card>p {
+    flex-wrap: wrap;
+}
+
+/* main */
+
 /* responsive */
 /* for tablet */
 @media screen and (max-width:992px) {
@@ -150,21 +211,37 @@ nav {
     .nav-ancor {
         margin-top: 20px;
     }
+
     .banner-container {
         flex-direction: column;
     }
 
-.banner-text {
-    width: 100%;
-    padding: 40px;
+    .banner-text {
+        width: 100%;
+        padding: 40px;
 
 
-    
-}
-.banner-photo img{
-    width: 100%;
 
-}
+    }
+
+    .banner-photo img {
+        width: 100%;
+
+    }
+
+    .card-container {
+        max-width: 100%;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+
+
+        width: 100%;
+        
+    }
+   
 
 
 
@@ -175,6 +252,7 @@ nav {
 @media screen and (max-width:576px) {
     nav {
         width: 100%;
+        padding: 5px;
     }
 
     .navbar {
@@ -185,30 +263,56 @@ nav {
         flex-direction: column;
         margin-top: 50px;
     }
+
     .banner-container {
-        flex-direction: column;
+        flex-direction:
+            column;
     }
 
-.banner-text {
-    width: 100%;
-    align-items: center;
-    padding: 19px;
-
-    
-}
-.banner-photo img{
-    width: 100%;
-
-}
+    .banner-text {
+        width: 100%;
+        align-items: center;
+        padding: 19px;
 
 
-.banner-text-box{
-    margin-left: 50px;
-    width: 100%;
-}
-.font-color-primary{
-    font-size: 75px;
+    }
 
-}
+    .banner-photo img {
+        width: 100%;
+
+    }
+
+
+    .banner-text-box {
+        margin-left: 50px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .font-color-primary {
+        font-size: 75px;
+
+    }
+
+    .card-container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        width: 80%;
+        
+    }
+    main h1 {
+        font-size: 20px;
+    }
+    .font{
+        font-size: 20px;
+
+    }
+   
 
 }
