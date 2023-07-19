@@ -156,7 +156,7 @@ nav {
     min-height: 600px;
     gap: 10px;
     display: flex;
-    border: 1px solid tomato;
+    justify-content: center;
 
     
 
@@ -205,7 +205,7 @@ main>p {
     position: relative;
 }
 .card::after{
-    content: "";
+    content: "Watch Now";
     position: absolute;
     top: 50%;
     left: 50%;
