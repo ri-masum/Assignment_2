@@ -181,6 +181,7 @@ main>p {
     height: 470px;
     text-align: center;
     margin-top: 30px;
+
 }
 
 .card>img {
@@ -193,7 +194,39 @@ main>p {
 .card>p {
     flex-wrap: wrap;
 }
+/* hover effect */
+.card{
+    position: relative;
+}
+.card::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 60px;
+    height: 80px;
+    background-image: url('./images/play-solid.svg');
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s;
 
+}
+.card:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 300px;
+    height: 450px;
+
+}
+.card:hover::after{
+    opacity: 1;
+}
+.card:hover img{
+    opacity: 0.1;
+    transition: opacity 0.3s;
+
+}
 /* play container */
 .play-container {
     display: flex;
