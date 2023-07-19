@@ -151,11 +151,14 @@ nav {
 /* main */
 
 .card-container {
-    max-width: 100%;
-    margin: 0 auto;
+    /* max-width: 100%;
+    margin: 0 auto; */
+    min-height: 600px;
     gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    border: 1px solid tomato;
+
+    
 
 }
 
@@ -223,7 +226,7 @@ main>p {
 
 }
 .card:hover::after{
-    opacity: 1;
+    opacity: 2;
 }
 .card:hover img{
     opacity: 0.1;
@@ -407,8 +410,8 @@ footer {
     }
 
     .card-container {
-        max-width: 100%;
 
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -487,7 +490,7 @@ footer {
     }
 
     .card {
-        width: 80%;
+        /* width: 80%; */
 
     }
 
