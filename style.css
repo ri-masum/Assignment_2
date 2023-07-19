@@ -4,6 +4,7 @@ body {
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
+
 }
 
 /* navbar css */
@@ -27,8 +28,6 @@ body {
 }
 
 nav {
-    width: 100vw;
-
     padding: 20px;
 }
 
@@ -36,7 +35,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -78,6 +76,7 @@ nav {
 /* banner */
 
 .banner-container {
+    /* max-width: 100%; */
     margin: 0 auto;
     display: flex;
     gap: 60px;
@@ -85,19 +84,19 @@ nav {
 }
 
 .banner-text {
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: url('./images/Group\ 14.png');
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
 }
 
 .banner-text-box {
-    width: 70%;
     margin-left: 240px;
     line-height: 35px;
-    overflow: unset;
 }
 
 
@@ -239,7 +238,7 @@ main>p {
 
 /* play container */
 /* games container */
-.game-container{
+.game-container {
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -248,6 +247,7 @@ main>p {
     justify-content: center;
     padding: 50px;
 }
+
 .game-option {
     display: flex;
     align-items: center;
@@ -270,14 +270,74 @@ main>p {
 
 
 /* main */
+/* footer */
+footer {
+    border-radius: 200px 0px 0px 0px;
+    text-align: center;
+    background: #0B0223;
+    padding: 50px;
+    margin-top: 40px;
+}
+
+.foooter-title-style {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    gap: 20px;
+
+}
+
+.footer-nav li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+
+}
+
+.footer-nav>li>a {
+    text-decoration: none;
+    color: #FFF;
+
+
+}
+
+.footer-icons>i {
+    font-size: 40px;
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
+
+.footer-bottom {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.copywrite {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer */
 
 /* responsive */
 /* for tablet */
 @media screen and (max-width:992px) {
-    nav {
-        width: 100%
-    }
-
+  
     .navbar {
         flex-direction: column;
 
@@ -293,7 +353,6 @@ main>p {
     }
 
     .banner-text {
-        width: 100%;
         padding: 40px;
 
 
@@ -376,7 +435,6 @@ main>p {
 
     .banner-text-box {
         margin-left: 50px;
-        width: 100%;
         object-fit: cover;
     }
 
@@ -441,12 +499,14 @@ main>p {
         width: 100px;
         height: 100px;
     }
-    .game-container{
+
+    .game-container {
         margin-top: 80px;
         flex-wrap: wrap;
-        gap:20px;
+        gap: 20px;
         padding: 0;
     }
+
     .game-option {
         display: flex;
         align-items: center;
@@ -455,9 +515,11 @@ main>p {
         color: 0B0223;
         font-weight: 600;
     }
-    .game-option >img {
+
+    .game-option>img {
         width: 20px;
     }
+
     .game-option:hover {
         border: 1px solid #FF42A5;
         border-radius: 30px;
@@ -467,6 +529,59 @@ main>p {
         -webkit-text-fill-color: transparent;
     }
 
+    /* footer
+     */
+    footer {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .foooter-title-style {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .footer-nav {
+        gap: 0px;
+        display: grid;
+        grid-template-columns: repeat(3,60px);
+
+    }
+
+    .footer-nav li {
+        list-style: none;
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 50px;
+
+    }
+    .footer-icons>i {
+        font-size: 30px;
+        margin-right: 50px;
+        margin-top: 30px;
+       text-align: center;
+        /* display: grid;
+        grid-template-columns: repeat(3,1fr); */
+    
+    }
+    
+    .footer-bottom {
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2,60px);
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    
+    .copywrite {
+        color: #FFF;
+        font-size: 10px;
+    }
+    
+    
+    
+
+
 
 
 }
+
