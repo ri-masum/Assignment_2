@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
 
+
 }
 
 /* navbar css */
@@ -288,6 +289,8 @@ main>p {
     font-size: 20px;
     color: 0B0223;
     font-weight: 600;
+    padding: 4px;
+
 }
 
 .game-option:hover {
@@ -305,7 +308,6 @@ main>p {
 /* main */
 /* footer */
 footer {
-    border-radius: 200px 0px 0px 0px;
     text-align: center;
     background: #0B0223;
     padding: 50px;
@@ -341,11 +343,16 @@ footer {
 
 
 }
+.footer-icons{
+    margin-top: 50px;
+}
 
-.footer-icons>i {
+.footer-icons>a {
     font-size: 40px;
     margin-right: 50px;
-    margin-top: 50px;
+
+
+    text-decoration: none;
 
 }
 
@@ -580,8 +587,8 @@ footer {
         margin-top: 50px;
 
     }
-    .footer-icons>i {
-        font-size: 30px;
+    .footer-icons>a {
+        font-size: 40px;
         margin-right: 50px;
         margin-top: 30px;
        text-align: center;
