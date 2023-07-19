@@ -126,6 +126,7 @@ nav {
     padding: 21px 40px;
     border: none;
     color: white;
+    cursor: pointer;
 
 }
 
@@ -135,6 +136,7 @@ nav {
     border-radius: 48px;
     background: #4EC5F7;
     border: none;
+    cursor: pointer;
 
 }
 
